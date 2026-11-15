@@ -7,7 +7,7 @@
 
 | Member name | Roll number | Category | Variant implemented |
 |---|---|---|---|
-| Yasaswi | IIT2024190 | OS command injection | Variant 1 – In-band |
+| Gireesh  | IIT2024106 | OS command injection | Variant 1 – In-band |
 
 ## Demonstration video
 
