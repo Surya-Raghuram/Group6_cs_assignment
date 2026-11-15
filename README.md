@@ -27,7 +27,7 @@ Each member is responsible for implementing and explaining their assigned vulner
 | Victor Daniel | IIT2024014 | XSS | Stored XSS |
 | Avinashreddy Annapareddy| IIT2024061 | SQL Injection |Autharizaton Bypass|
 |  Gireesh Kumar Reddy Kunamreddy | IIT2024106 | OS command injection| In-band (command output returned) |
-|[Friend 5]         | [Roll number] |[Category]|  [Variant]|
+|Nayan          | IIT2024082 |  OS command injection| Variant 2|
 
 **Note:** Each member should fill in their own details and ensure that their individual implementation and contribution are identifiable.
 
