@@ -2,7 +2,7 @@
 
 **Indian Institute of Information Technology Allahabad**  
 **Course:** Cyber Security (IT-30001)  
-**Semester:** Autumn 2026
+**Semester:** 5
 
 ## 1. Project Overview
 
@@ -29,53 +29,6 @@ Each member is responsible for implementing and explaining their assigned vulner
 |  Gireesh Kumar Reddy Kunamreddy | IIT2024106 | OS command injection| In-band (command output returned) |
 |Nayan          | IIT2024082 |  OS command injection| Variant 2|
 
-**Note:** Each member should fill in their own details and ensure that their individual implementation and contribution are identifiable.
-
-## 3. Project Structure
-
-```text
-Web-Server-Security/
-│
-├── CSRF/
-│   ├── README.md
-│   └── screenshots/
-│
-├── SQL_Injection/
-│   ├── source_code
-│   ├── README.md
-│   └── screenshots/
-│
-├── Command_Injection/
-│   ├── source_code
-│   ├── README.md
-│   └── screenshots/
-│
-├── XSS/
-│   ├── app.py
-│   ├── comments.db
-│   ├── README.md
-│   ├── requirements.txt
-│   └── templates/
-│       ├── comments.html
-│       ├── index.html
-│       └── search.html
-│
-└── README.md
-```
-
-*The folders can be adjusted according to the variants actually implemented by the group.*
-
-## 4. Demonstration
-
-The group demonstration video covers:
-
-- Vulnerable application implementation.
-- Working exploitation of each assigned vulnerability.
-- Explanation of the root cause.
-- Implementation of the selected mitigation.
-- Verification that the same exploit is blocked after mitigation.
-
-**Video Demonstration:** [Insert video link]
 
 ## 5. Individual Contributions
 
