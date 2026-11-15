@@ -25,7 +25,7 @@ Each member is responsible for implementing and explaining their assigned vulner
 |---|---|---|---|
 | Durga Surya Raghuram Gadepalli | IIT2024093| CSRF | GET-Based Forged Action |
 | Victor Daniel | IIT2024014 | XSS | Stored XSS |
-| [Friend 3] | [Roll Number] | [Category] | [Variant] |
+| Avinashreddy Annapareddy| IIT2024061 | SQL Injection |Autharizaton Bypass|
 |  Gireesh Kumar Reddy Kunamreddy | IIT2024106 | OS command injection| In-band (command output returned) |
 |[Friend 5]         | [Roll number] |[Category]|  [Variant]|
 
