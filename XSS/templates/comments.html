@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Comments</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
@@ -10,7 +11,10 @@
 <!-- Vulnearability -->
  
     {% for comment in comments %}
-        <p>{{ comment[0] | safe }}</p>
+        <div class="comment">
+            <h4>{{ comment[0] }}</h4>
+            <p>{{ comment[1] | safe }}</p>
+        </div>
     {% endfor %}
 
     <a href="/">Go Back</a>
