@@ -1,23 +1,88 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stored XSS Lab</title>
+    <title>My Blog - Stored XSS Lab</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
+
+    <h1>My Blog</h1>
+
+    <!-- USER AUTHENTICATION -->
+
+    <div>
+        {% if username %}
+            <h3>Welcome, {{ username }}!</h3>
+            <a href="/logout">Logout</a>
+        {% else %}
+            <a href="/login">Login</a>
+            |
+            <a href="/register">Register</a>
+        {% endif %}
+    </div>
+
+    <hr>
+
+    <!-- HARDCODED BLOG CONTENT -->
+
+    <h2>Understanding Web Security</h2>
+
+    <p>
+        Web application security protects applications
+        against vulnerabilities such as SQL Injection,
+        Cross-Site Scripting (XSS), and CSRF.
+    </p>
+
+    <p>
+        Stored XSS occurs when malicious input is stored
+        on a server and executed when another user views it.
+    </p>
+
+    <hr>
+
+    <!-- COMMENT SECTION -->
+
     <h2>Submit Comment</h2>
 
-    <form action="/comment" method="POST">
-        <textarea name="comment" placeholder="Enter comment" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    {% if username %}
 
-        <form action="/delete-comments" method="POST"
-      onsubmit="return confirm('Are you sure you want to delete all comments?');">
+        <form action="/comment" method="POST">
 
-    <button type="submit">
-        Delete All Comments
-    </button>
+            <textarea
+                name="comment"
+                placeholder="Enter your comment"
+                required>
+            </textarea>
 
-    <a href="/comments">View Comments</a>
+            <br><br>
+
+            <button type="submit">
+                Submit Comment
+            </button>
+
+        </form>
+
+    {% else %}
+
+        <p>
+            Please <a href="/login">login</a>
+            to submit a comment.
+        </p>
+
+    {% endif %}
+
+    <hr>
+
+    <!-- COMMENT MANAGEMENT -->
+
+    <h2>Comment Management</h2>
+
+    <a href="/comments">View All Comments</a>
+
+    <br><br>
+
+
 </body>
 </html>
